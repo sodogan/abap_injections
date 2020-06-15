@@ -49,7 +49,7 @@ CLASS lct_monolithic IMPLEMENTATION.
   METHOD whenthereisdatareturned.
 *Given
 ** Constructor Injection goes here!
-    DATA(mo_cut) = zcl_dao_singleton_injectable=>get_instance( if_dao_query = NEW lcst_mock_data_exists(  ) ).
+    DATA(mo_cut) = new zcl_dao_injectable( if_dao_query = NEW lcst_mock_data_exists(  ) ).
 
 *When
     TRY.
@@ -72,7 +72,7 @@ CLASS lct_monolithic IMPLEMENTATION.
   METHOD whenthereisnodatareturned.
 *Given
 ** Constructor Injection goes here!
-    DATA(mo_cut) = zcl_dao_singleton_injectable=>get_instance( if_dao_query = NEW lcst_no_data_exists(  ) ).
+    DATA(mo_cut) = new zcl_dao_injectable( if_dao_query = NEW lcst_no_data_exists(  ) ).
 
 *When
     TRY.

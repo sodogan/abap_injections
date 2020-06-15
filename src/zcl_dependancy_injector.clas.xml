@@ -3,14 +3,14 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_DAO_SINGLETON_BACKDOOR</CLSNAME>
+    <CLSNAME>ZCL_DEPENDANCY_INJECTOR</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>basic test</DESCRIPT>
+    <DESCRIPT>dependancy injector</DESCRIPT>
+    <CATEGORY>05</CATEGORY>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>
     <UNICODE>X</UNICODE>
-    <WITH_UNIT_TESTS>X</WITH_UNIT_TESTS>
    </VSEOCLASS>
   </asx:values>
  </asx:abap>
